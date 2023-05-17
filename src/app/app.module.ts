@@ -10,6 +10,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FuncionarioModule } from './funcionario/funcionario.module';
+import { ListarFuncionarioComponent } from './listar-funcionario/listar-funcionario.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { FuncionarioModule } from './funcionario/funcionario.module';
     NavbarComponent,
     HomeComponent,
     LoginComponent
+    
   ],
   imports: [
     BrowserModule,
