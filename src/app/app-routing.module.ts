@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth/auth.guard';
+import { CadastrarFuncionarioComponent } from './cadastrar-funcionario/cadastrar-funcionario.component';
 import { HomeComponent } from './home/home.component';
 import { ListarFuncionarioComponent } from './listar-funcionario/listar-funcionario.component';
 import { LoginComponent } from './login/login.component';
@@ -19,6 +20,10 @@ const routes: Routes = [
       {
         path: 'funcionarios/listar',
         component: ListarFuncionarioComponent
+      },
+      {
+        path: 'funcionarios/cadastrar',
+        component: CadastrarFuncionarioComponent
       }
     ]
 

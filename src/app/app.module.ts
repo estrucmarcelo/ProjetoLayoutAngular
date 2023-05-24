@@ -7,10 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ToastrModule } from 'ngx-toastr';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FuncionarioModule } from './funcionario/funcionario.module';
-import { ListarFuncionarioComponent } from './listar-funcionario/listar-funcionario.component';
 
 
 @NgModule({
@@ -19,6 +16,7 @@ import { ListarFuncionarioComponent } from './listar-funcionario/listar-funciona
     NavbarComponent,
     HomeComponent,
     LoginComponent
+    
     
   ],
   imports: [
