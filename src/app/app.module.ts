@@ -18,6 +18,7 @@ import { FuncionarioModule } from './funcionario/funcionario.module';
     LoginComponent
     
     
+    
   ],
   imports: [
     BrowserModule,

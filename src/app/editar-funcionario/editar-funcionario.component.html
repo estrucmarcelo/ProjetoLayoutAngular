@@ -3,7 +3,7 @@
 <div class="well">
     <form #formFuncionario="ngForm" >
         <div class="form-group">
-            <label for="nome">Funcionários:</label>
+            <label for="nome">Funcionário:</label>
             <input
             type="text"
             class="form-control"
@@ -25,8 +25,8 @@
         <div class="form-group text-center">
             <input type="submit"
             class="btn btn-success"
-            value="Cadastrar"
-            (click)="cadastrar()"
+            value="Atualizar"
+            (click)="atualizar()"
             [disabled]="!formFuncionario.form.valid">
             <a 
             class="btn btn-default">

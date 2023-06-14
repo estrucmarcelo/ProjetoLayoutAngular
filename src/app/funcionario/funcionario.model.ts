@@ -1,3 +1,5 @@
 export class Funcionario{
-    constructor(public id:number, public nome:string){}
+    constructor(public id?:number, public nome?:string){}
+    
+
 }
