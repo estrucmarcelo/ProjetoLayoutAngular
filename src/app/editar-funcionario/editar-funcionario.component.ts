@@ -18,10 +18,10 @@ constructor(private funcionarioService: FuncionarioService,
 
 @ViewChild('formFuncionario',{static:true}) formFuncionario!: NgForm
 funcionario!:Funcionario
-
+id!: number
 ngOnInit(): void {
-  const id = +this.route.snapshot.params['id']
-  this.funcionario = this.funcionarioService.buscarPorID(id)
+  this.id = +this.route.snapshot.params['id']
+  this.funcionario = this.funcionarioService.buscarPorID(this.id)
 }
 
 atualizar():void{
@@ -30,6 +30,8 @@ atualizar():void{
     this.router.navigate(['/funcionarios/listar'])
   }
 }
+
+
 
 
 }

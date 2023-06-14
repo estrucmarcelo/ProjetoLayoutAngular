@@ -13,7 +13,7 @@ export class ListarFuncionarioComponent {
 
   funcionarios!: Funcionario[]
 
-  constructor(private funcionarioService:FuncionarioService){}
+  constructor(private funcionarioService:FuncionarioService,private router: Router){}
 
   ngOnInit():void{
     this.funcionarios = this.listarTodos();
@@ -25,6 +25,17 @@ export class ListarFuncionarioComponent {
 
   listarTodos():Funcionario[]{
     return this.funcionarioService.listarTodos();
+  }
+
+  editar(id?:number):void{
+    console.log("funcionarios/editar/" + id)
+      this.router.navigate(["funcionarios/editar/" + id]);
+  }
+
+  remover(id?:number):void{
+    console.log("Cheguei aqui")
+    this.funcionarioService.remover(id!)
+      this.router.navigate(["funcionarios/listar"]);
   }
 
 }
