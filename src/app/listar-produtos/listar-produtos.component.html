@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+      <div class="col-12">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Descrição</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr *ngFor="let produto of listProdutos">
+              <th scope="row">{{ produto.id }}</th>
+              <td >{{ produto.title }}</td>
+              <td>{{ produto.description }}</td>
+              <td [width]="180">
+                <button type="button" class="mx-1 btn btn-primary"><i class="bi bi-eye-fill"></i></button>
+                <button type="button" class="mx-2 btn btn-success"><i class="bi bi-pencil-square"></i></button>
+                <button type="button" class="mx-1 btn btn-danger"><i class="bi bi-trash-fill"></i></button>
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>

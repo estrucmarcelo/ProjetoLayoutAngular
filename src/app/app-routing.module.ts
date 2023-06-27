@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { ListarFuncionarioComponent } from './listar-funcionario/listar-funcionario.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ListarProdutosComponent } from './listar-produtos/listar-produtos.component';
 
 const routes: Routes = [
   {
@@ -18,7 +19,8 @@ const routes: Routes = [
       {path: 'home', component: HomeComponent},
       {path: 'funcionarios/editar/:id', component: EditarFuncionarioComponent},
       {path: 'funcionarios/listar',component: ListarFuncionarioComponent},
-      {path: 'funcionarios/cadastrar',component: CadastrarFuncionarioComponent}
+      {path: 'funcionarios/cadastrar',component: CadastrarFuncionarioComponent},
+      {path: 'produtos/listar',component: ListarProdutosComponent}
       
     ]
 

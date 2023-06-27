@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FuncionarioModule } from './funcionario/funcionario.module';
+import { ListarProdutosComponent } from './listar-produtos/listar-produtos.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { FuncionarioModule } from './funcionario/funcionario.module';
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    ListarProdutosComponent
+    
     
     
     
@@ -25,7 +29,8 @@ import { FuncionarioModule } from './funcionario/funcionario.module';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    FuncionarioModule
+    FuncionarioModule,
+    HttpClientModule
    
   
    
